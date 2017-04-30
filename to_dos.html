@@ -1,0 +1,53 @@
+<!DOCTYPE.html>
+
+<html>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <head>
+        <title>Pocket Tasks</title>
+        <h1 class="titleclass" align="center"> My Tasks </h1>
+        
+    </head>
+    <body id="body-background">  
+    
+    <table>
+        <tr>
+            <button type="button" class="task-buttons"> Add Check In </button>
+        </tr>
+        <tr>
+            <button class="task-buttons" type="button" name="Task2"> Finish Application </button>
+        </tr>
+        <tr>
+            <button type="button" class="task-buttons"> Do Laundry </button>
+        </tr>
+        <tr>
+            <button type="button" class="task-buttons"> Make Dinner</button>
+        </tr>
+        <tr>
+            <button type="button" class="task-buttons"> Order Books </button>        </tr> 
+            
+    </table>
+    
+    <button id="blah" onclick="myFunction()">
+        Try it
+    </button>
+
+
+
+    <script>
+        function myFunction() {
+            
+            var node = document.createElement("li");
+            var textnode = document.createTextNode("Water");
+            node.appendChild(textnode);
+            document.getElementById("blah").appendChild(node);
+            
+            // var a = "apple";
+            // console.log("apple");
+        }
+    
+    </script>
+        
+    </body>
+
+</html>
+
