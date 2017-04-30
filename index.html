@@ -1,0 +1,52 @@
+<!DOCTYPE.html>
+
+<html>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link href='//fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+
+    <head>
+        <title>Pocket Tasks</title>
+        <h1 class="titleclass" align="center"> My Tasks </h1>
+        
+    </head>
+    <body id="body-background">  
+    
+    <table id="todo-table">
+        <tr>
+            <button type="button" class="task-buttons"> Add Check In </button>
+        </tr>
+        <tr>
+            <button class="task-buttons" type="button" name="Task2"> Finish Application </button>
+        </tr>
+        <tr>
+            <button type="button" class="task-buttons"> Do Laundry </button>
+        </tr>
+        <tr>
+            <button type="button" class="task-buttons"> Make Dinner</button>
+        </tr>
+        <tr>
+            <button type="button" class="task-buttons"> Order Books </button>
+        </tr>
+        <tr>
+            <input type="text" id="inputform" onkeydown="if (event.keyCode == 13) { myFunction(this.value); return false; }" class="task-buttons"> </input>
+        </tr>
+    </table>
+
+    <script>
+        function myFunction(text) {
+            var table = document.getElementById("todo-table").getElementsByTagName('tbody')[0];
+            var tr = table.insertRow(0); // document.createElement("tr");
+            var button = document.createElement("button");
+            var textnode = document.createTextNode(text);
+            button.appendChild(textnode)
+            button.setAttribute("class", "task-buttons")
+            button.setAttribute("type", "text")
+            button.type = "text"
+            tr.appendChild(button);
+        }
+    </script>
+        
+    </body>
+
+</html>
+
